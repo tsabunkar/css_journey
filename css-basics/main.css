@@ -1,0 +1,14 @@
+/* !Google fonts */
+@import url('https://fonts.googleapis.com/css?family=Barriecito&display=swap');
+
+section {
+	/* css rule */
+	/* background -> Adding Container color */
+	background: palevioletred;
+}
+
+h1 {
+	/* color -> Adding Text color */
+	color: rgb(9, 255, 0);
+	font-family: 'Barriecito', cursive;
+}
