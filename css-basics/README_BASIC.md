@@ -56,11 +56,10 @@ External Style Sheet CSS
 - Element : Selector name is html element/node name itself. Thus applying the styling to all the
   same element with that styling.
   html:
-  <h1 class="tilte"> Hello </h1>
-   
+  <-h1 class="tilte"> Hello <-/h1>
   css:
   h1{
-      color : red;
+  color : red;
   }
 - Classes : Used to apply the styling for the elements within the same class. Think Students in the same class
   has common feature (i.e- Common Styling Applied).
@@ -69,13 +68,13 @@ External Style Sheet CSS
 
   ex -html:
 
-   <h1 class="tilte"> Hello </h1>
-   <h2 class="tilte"> World </h2>
-         
-      css : 
-     .title {
-          color : red;
-      }
+  <-h1 class="tilte"> Hello <-/h1>
+  <-h2 class="tilte"> World <-/h2>
+
+  css :
+  .title {
+  color : red;
+  }
   NOTE : naming convention of class and ID's name should be kebab-cases. Also css is case incensitive for ex-
   sectionTitile is same as sectiontitile in CSS class name thus you me result up in overidding the Styling.
 
@@ -87,7 +86,7 @@ External Style Sheet CSS
   applying a feature to specific student with his uid (Id card)
   ex - html :
 
-    <h1 id="main-tilte"> Hello </h1>
+  <-h1 id="main-tilte"> Hello <-/h1>
 
   css :
   #main-title {
@@ -96,10 +95,27 @@ External Style Sheet CSS
 
 - Attribute : Set styling to all elements with attribute
   ex - html :
-  <button disabled> Click </button>
+  <-button disabled> Click <-/button>
   css :
   [disabled] {
   color : red;
   }
+
+---
+
+- CSS Specifity: We know that multiple styling can be applied on the same element.Thus Specificity provides/tell order/priority of the styling which will be applied.
+- CSS parse the rules from top to bottom approach.
+- Open the chrome dev tools > Elements (tab) > Styles (below tab) > Note : the order of styles applied is showed from top to bottom ( for ex- first element.style{ } -> is inline style )
+- CSS - Casading Style Sheets -> Casading means multiple styles/multipe css rules can be applied to same
+  element.
+- Specifity: Resolves conflicts arising from multiple rule
+- order of specificity :
+  1. !important (Highest specifity)
+  2. Inline Style
+  3. #ID selector
+  4. .class, :pseudo-class and [attribute] selector
+  5. Element/Tag Selector, Universal selector and ::pseudo-element selector (Lowest specifity)
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
 
 ---
