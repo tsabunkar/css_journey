@@ -12,3 +12,12 @@ h1 {
 	color: rgb(9, 255, 0);
 	font-family: 'Barriecito', cursive;
 }
+
+#product-overview {
+	background: red;
+}
+
+.section-title {
+	background-color: white;
+	color: teal;
+}

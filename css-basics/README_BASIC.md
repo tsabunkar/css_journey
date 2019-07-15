@@ -51,8 +51,55 @@ External Style Sheet CSS
 
 ---
 
-- Selector name can be -> Element name, id, class, universal, Attribute
+- Different types of selector -> Element name, id, class, universal, Attribute
+
 - Element : Selector name is html element/node name itself. Thus applying the styling to all the
   same element with that styling.
-- Classes : Used to apply the styling for the elements within the same class. Think Student in the same class
-  has common feature
+  html:
+  <h1 class="tilte"> Hello </h1>
+   
+  css:
+  h1{
+      color : red;
+  }
+- Classes : Used to apply the styling for the elements within the same class. Think Students in the same class
+  has common feature (i.e- Common Styling Applied).
+  Classes are best when we are reusing the Styling. Whereas, ID is best when we want to apply the style for
+  a particular element only.
+
+  ex -html:
+
+   <h1 class="tilte"> Hello </h1>
+   <h2 class="tilte"> World </h2>
+         
+      css : 
+     .title {
+          color : red;
+      }
+  NOTE : naming convention of class and ID's name should be kebab-cases. Also css is case incensitive for ex-
+  sectionTitile is same as sectiontitile in CSS class name thus you me result up in overidding the Styling.
+
+- Universal : Applies the styling to all the elements of that html page. Thinks Students in the same college.
+  css : \* {
+  color : red;
+  }
+- ID's : Setting the styling to specific element by identifiying using unique identified i.e- id value, think
+  applying a feature to specific student with his uid (Id card)
+  ex - html :
+
+    <h1 id="main-tilte"> Hello </h1>
+
+  css :
+  #main-title {
+  color : red;
+  }
+
+- Attribute : Set styling to all elements with attribute
+  ex - html :
+  <button disabled> Click </button>
+  css :
+  [disabled] {
+  color : red;
+  }
+
+---
